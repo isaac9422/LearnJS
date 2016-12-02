@@ -1,0 +1,13 @@
+permutation (char c[], int k){
+	if(k==c.length)
+		mostrar c;
+	else{
+		for(int i =0;i<c.length;i++){
+			if(visited[i] == false)
+			c[k] = s[i];
+			visited[i] = true;
+			permutation(c, k+1);
+			visited[i] = false;
+		}
+	}
+}
